@@ -1,7 +1,7 @@
 var width = 700, height = 450;
 
-var initialX = [];
-var initialY = [];
+var initialXAstroidPositions = [];
+var initialYAstroidPositions = [];
 var n = 10;
 var currentScore = 0;
 var highestScore = 0;
@@ -9,9 +9,9 @@ var collisions = 0;
 
 for (var i = 0; i < 10; i++) {
   var tempX = Math.random() * width;
-  initialX.push(tempX);
+  initialXAstroidPositions.push(tempX);
   tempX = Math.random() * height;
-  initialY.push(tempX);
+  initialYAstroidPositions.push(tempX);
 }
 
 var svg = d3.select("body").append("svg")
@@ -23,10 +23,10 @@ function Initialize() {
 
   ast.enter().append('image').
   .attr('x', function(d, i) {
-    return initialX[i];
+    return initialXAstroidPositions[i];
   })
   .attr('y', function(d, i) {
-    return initialY[i];
+    return initialYAstroidPositions[i];
   })
   .attr('xlink:href', function(d, i) {
     return "asteroid.png";
@@ -44,10 +44,10 @@ function update() {
 
   ast.enter().append('image').
   .attr('x', function(d,i) {
-    return initialX[i];
+    return initialXAstroidPositions[i];
   })
   .attr('y', function(d, i) {
-    return initialY[i];
+    return initialYAstroidPositions[i];
   });
 
 
