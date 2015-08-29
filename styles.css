@@ -3,3 +3,24 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+
+/*.astroid {
+  display: block;
+  background: url(asteroid.svg);
+  width: 20px;
+  height: 20px;
+
+}*/
+
+.astroid {
+  position: absolute;
+  image: url('asteroid.png');
+/*  fill: red;*/
+  height: 50px;
+  width: 50px;
+}
+
+.spaceship {
+  fill: blue;
+}
+
