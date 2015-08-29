@@ -2,6 +2,8 @@ var width = 700, height = 450;
 
 var initialXAstroidPositions = [];
 var initialYAstroidPositions = [];
+var initialXUserPosition = Math.floor(width/2);
+var initialYUserPosition = Math.floor(height/2);
 var n = 10;
 var currentScore = 0;
 var highestScore = 0;
