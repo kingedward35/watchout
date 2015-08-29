@@ -1,6 +1,6 @@
 var width = 700, height = 450;
 
-var n = 10;
+var n = 5;
 var enemyRadius = d3.range(5, 5*(n + 1), 5);
 var ssRadius = [50];
 var time = 1000;

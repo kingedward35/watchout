@@ -14,10 +14,8 @@ Feel free to use it if you like. */
 
 .astroid {
   position: absolute;
-  image: url('asteroid.png');
+  background-image: url('asteroid.png');
 /*  fill: red;*/
-  height: 50px;
-  width: 50px;
 }
 
 .spaceship {
