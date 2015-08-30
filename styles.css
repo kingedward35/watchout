@@ -14,11 +14,16 @@ Feel free to use it if you like. */
 
 .astroid {
   position: absolute;
+  display: block;
   background-image: url('asteroid.png');
-/*  fill: red;*/
+  fill: red;
 }
 
 .spaceship {
   fill: blue;
+}
+
+svg {
+  border-style: solid;
 }
 
